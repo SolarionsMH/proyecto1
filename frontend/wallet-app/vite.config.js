@@ -1,7 +1,13 @@
-import { defineConfig } from 'vite'
+// Actualización de conexión frontend-backend
+
+import { defineConfig } from "vite"
 import vue from '@vitejs/plugin-vue'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
+  server: {
+    proxy: {
+      '/api': 'https://127.0.0.1:5000'
+    }
+  }
 })
