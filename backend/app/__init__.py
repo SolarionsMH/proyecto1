@@ -3,12 +3,13 @@
 # Recuerden actualizar commits
 # FRONT NO TOCAR BACKEND
 
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy 
-from flask_migrate import Migrate
-from flask_login import LoginManager
-from flask_bcrypt import Bcrypt
-from flask_wtf import CSRFProtect
+from flask import Flask # type: ignore
+from flask_sqlalchemy import SQLAlchemy # type: ignore
+from flask_migrate import Migrate # type: ignore
+from flask_login import LoginManager # type: ignore
+from flask_bcrypt import Bcrypt # type: ignore
+from flask_wtf import CSRFProtect # type: ignore
+from flask_cors import CORS # type: ignore
 from config import Config 
 
 # Inicialización de las extenciones
@@ -30,6 +31,7 @@ def create_app(config_class=Config):
     login_manager.init_app(app)
     bcrypt.init_app(app)
     csrf.init_app(app)
+    CORS(app)
 
     # REgistro de blueprints
 
