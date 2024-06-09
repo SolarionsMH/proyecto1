@@ -101,7 +101,7 @@
     - Frontend:
       ```cmd
       cd frontend
-      npm run serve
+      npm run dev
       ```
 
 ## Configuración de Git
