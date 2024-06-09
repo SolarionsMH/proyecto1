@@ -1,0 +1,19 @@
+{
+  "name": "wallet-app",
+  "version": "1.0.0",
+  "description": "Paquetes para el desarrollo de la app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SolarionsMH/proyecto1.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SolarionsMH/proyecto1/issues"
+  },
+  "homepage": "https://github.com/SolarionsMH/proyecto1#readme"
+}
