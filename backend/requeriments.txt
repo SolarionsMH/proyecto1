@@ -5,3 +5,5 @@ Flask-Login
 Flask-Bcrypt
 Flask-WTF
 python-dotenv
+flask-cors
+vite
